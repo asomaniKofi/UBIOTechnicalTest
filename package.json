@@ -10,7 +10,7 @@
     "dev": "npm run clean && tsc -w",
     "compile": "npm run clean && tsc",
     "lint": "eslint --ext=.js,.ts --cache .",
-    "test": "npm run compile && mocha",
+    "test": "mocha",
     "docs": "npm run docs:openapi && npm run docs:api",
     "docs:openapi": "generate-openapi > openapi.json",
     "preversion": "npm run lint && npm run compile && npm run docs && git add openapi.json",
