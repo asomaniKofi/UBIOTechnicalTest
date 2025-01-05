@@ -58,7 +58,7 @@ describe('GET /group', () => {
 describe('DELETE /tasks/{taskId}', () => {
 
     it('deletes a task', async () => {
-        const res = await runtime.fetch('/group/8f7dad7d-c0b6-434f-9f28-ecef4f6893e5', {
+        const res = await runtime.fetch('/group/c76342a5-efbb-44b7-8cbe-b71504f1affd', {
             method: 'DELETE',
         });
         assert.strictEqual(res.status, 200);
